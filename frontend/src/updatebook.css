@@ -1,0 +1,89 @@
+/* Darker green background for the entire page */
+body {
+    background: linear-gradient(135deg, #a8d5ba 0%, #e3f4e3 100%);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Styling the form container to have a blurred transparent background */
+  #form-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+  }
+  
+  /* Form title styling */
+  #form-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50; /* Darker green color */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Form grid layout */
+  #form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Responsive form grid for tablet and desktop */
+  @media (min-width: 768px) {
+    #form-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Input fields styling */
+  #form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #6c757d; /* Darker border color */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  #form-group input:focus {
+    border-color: #2c3e50; /* Darker green focus color */
+    outline: none;
+  }
+  
+  /* Button styling */
+  #submit-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    background-color: #2c3e50; /* Darker green button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #submit-button:hover {
+    background-color: #1a242f; /* Even darker green on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    #form-container {
+      padding: 20px;
+    }
+  
+    #submit-button {
+      width: 100%;
+    }
+  }
+  
